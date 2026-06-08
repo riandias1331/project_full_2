@@ -1,0 +1,129 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--bg);
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 2.5rem 2rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-1);
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-1);
+    margin-bottom: 4px;
+}
+
+.sub {
+    font-size: 14px;
+    color: var(--text-3);
+    font-weight: 300;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 12px;
+    color: var(--text-2);
+    letter-spacing: .04em;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg);
+    color: var(--text-1);
+    outline: none;
+    transition: border-color .15s;
+}
+
+.field input:focus {
+    border-color: var(--border-strong);
+    background: var(--surface);
+}
+
+.field input::placeholder {
+    color: var(--text-3);
+}
+
+.btn {
+    width: 100%;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: 500;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background .15s, opacity .15s;
+    margin-top: 4px;
+}
+
+.btn:hover:not(:disabled) {
+    background: var(--accent-hover);
+}
+
+.btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.error {
+    background: var(--error-bg);
+    color: var(--error);
+    border-radius: var(--radius-md);
+    padding: 10px 14px;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 13px;
+    color: var(--text-3);
+}
+
+.switch a {
+    color: var(--text-1);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
